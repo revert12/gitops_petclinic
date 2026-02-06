@@ -26,7 +26,7 @@ jobs:
       - name: Log in to Amazon ECR
         id: login-ecr
         uses: aws-actions/amazon-ecr-login@v1
-          with:
+        with:
     # 이 옵션을 추가하여 비밀번호 마스킹 경고를 해결합니다.
           mask-password-custom-locally: true
       # 4. Nginx 이미지 빌드 & 푸시
